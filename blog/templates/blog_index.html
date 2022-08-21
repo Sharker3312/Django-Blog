@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block page_content %}
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+
+
+<div class="card bg-white shadow-lg text-white  mx-auto col-md-9" style="">
+  <img src="data:image/png;base64,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" class="card-img" alt="...">
+  <div class="card-img-overlay">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <p class="card-text">Last updated 3 mins ago</p>
+  </div>
+  <div class="row   row-cols-1 row-cols-md-2 g-1" style="" >
+    {% for post in posts %}
+    
+    <div class="col-sm-6 "> 
+  
+      <div class="card    shadow-lg m-2 text-dark bg-light " style="width: 20rem;">
+        <img class="card-img-top"  alt="Card image cap"  src="{{ post.image.url }}">
+        <div class="card-img-overlay text-left">
+          
+          {% for category in post.categories.all %}
+          <a href="{% url 'blog_category' category.name %}">
+          <div class=" h-auto  d-inline-block border   border-white shadow rounded  opacity-75 shadow-lg bg-secondary text-white" style="--bs-bg-opacity: .5; --bs-border-opacity: .5;">
+            <p class="fst-italic fs-6">{{ category.name }}</p> 
+          </div>
+          {% endfor %}
+
+        </div>
+        <div class="card-body">
+          <h8 class="card-title"><a  class="link-info" href="{% url 'blog_detail' post.pk%}">{{ post.title }}</a></h8>
+          <p class=" text-dark">{{ post.body | slice:":100" | safe }}...</p>
+          {% comment %} <a href="{% url 'blog_detail' post.pk%}" class="btn btn-primary">Read More</a> {% endcomment %}
+          <p class="card-text">
+            <small class="text-muted"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16"><path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z"/><path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z"/></svg>  
+              &nbsp;1000&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16"><path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/><path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/></svg>
+            &nbsp;{{ post.created_on.date }}
+            </small>
+          </p>
+        </div>
+      </div>
+  
+    </div>
+  
+    {% endfor %}
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.min.js" integrity="sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK" crossorigin="anonymous"></script>
+
+</div>
+
+
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+  
+
+
+
+
+
+
